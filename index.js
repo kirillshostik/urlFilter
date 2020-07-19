@@ -40,7 +40,7 @@ document.getElementById('sizes').addEventListener('input', createNewURL);
 document.getElementById('manufacturer').addEventListener('input', createNewURL);4
 
 const newURL = {};
-newURL.base = url.pathname+'?';
+newURL.base = url.origin+url.pathname+'?';
 newURL.size = 'size=';
 newURL.color = '&color=';
 newURL.manufacturer = '&manufacturer=';
